@@ -5,17 +5,22 @@
     <title>Document</title>
     <style>
         body {
-            background-color: rgb(198, 215, 168);
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(242, 244, 238);
+            color: #575F7D;
+            font-family: 'Lora', serif;
+            font-size: 20px;
+            font-weight: lighter;
+            line-height: 30px;
         }
         h1, h3 {
             font-size: 22px;
-            color: rgb(206, 14, 75);
+            color: rgb(98, 139, 166);
             line-height: 30px;
         }
         img {
-            width: 400px;
-            height: 350px;
+            width: 150px;
+            height: 150px;
+            border-radius: 80px;
         }
         ul img {
             width: 20px;
@@ -28,17 +33,53 @@
         a:hover {
             color: orange;
         }
+        .container {
+            width: 700px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .card {
+            background-color: rgb(255, 255, 255);
+            padding: 40px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            margin: 20px 0px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #6161b7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .a1 {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        li {
+            display: inline;
+        }
+        li img {
+         width: 40px;
+         height: 40px;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+    <div class="card">
     <h1>Привет. Меня зовут Ахмадов Рамазан Хизирович.</h1>
     <img src="0.jpg" alt="">
     <p>Живу в Турции. Люблю программировать, У меня есть аккаунт на GitHub куда я выкладываю свои работы.</p>
-    <a href="https://github.com/Ramzan955">Связаться со мной</a>
+    <a class="btn" href="https://github.com/Ramzan955">Связаться со мной</a>
+     </div>
+     <div class="card">
     <h3>Мои сети:</h3>
-    <ul>
+    <ul class="a1">
         <li><a href="https://github.com/Ramzan955"><img src="github.svg" alt=""></a></li>
         <li><a href="https://github.com/Ramzan955"><img src="instagram.svg" alt=""></a></li>
     </ul>
+</div>
+</div>
 </body>
 </html>
